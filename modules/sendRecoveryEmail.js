@@ -17,7 +17,7 @@ function sendRecoveryEmail(email, recoveryToken) {
     from: "homematcher.team@gmail.com",
     to: email,
     subject: 'Récupération de mot de passe',
-    text: `Bonjour,\n\nVoici votre lien de récupération de mot de passe : http://votre_site.com/resetpassword?token=${recoveryToken}\n\nCordialement,\nl'équipe HomeMather`
+    text: `Bonjour,\n\nVoici votre lien de récupération de mot de passe : http://localhost:3001/users/forgotpassword/resetpassword?token=${recoveryToken}\n\nCordialement,\nl'équipe HomeMather`
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
