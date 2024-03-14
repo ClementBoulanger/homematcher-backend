@@ -5,7 +5,7 @@ const Realty = require('../models/realtys');
 
 // Route pour gérer les notifications
 router.post('/', async (req, res) => {
-  const token = req.headers.authorization//req.headers.authorization;
+  const token = req.headers.authorization;
   try {
   const { realtyId, action, email } = req.body;
   // Exemple : token : rdj4_t625PhSLGrbnVh_QnlZNOO7S8-v , realtyId: 65eedb8381acc97e07b529b2 , action: realtyLike , email : email@gmail.com
