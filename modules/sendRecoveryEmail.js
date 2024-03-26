@@ -9,7 +9,7 @@ function sendRecoveryEmail(email, recoveryToken) {
     secure: false, // false pour TLS
     auth: {
       user: "apikey", // Nom d'utilisateur : apikey
-      pass: process.env.API_KEY   // API_KEY= "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"  
+      pass: process.env.API_KEY   
     }
   });
 
